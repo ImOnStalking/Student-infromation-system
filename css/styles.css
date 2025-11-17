@@ -1,0 +1,22 @@
+/* Custom styles for the Student Information System */
+
+/* Custom button style */
+.btn-custom {
+    background-color: #00974c; 
+    border-color: #1d4e00;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+    color: white;
+}
+
+/* img edit profile */
+#profileimg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
