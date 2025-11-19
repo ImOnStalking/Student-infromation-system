@@ -12,20 +12,23 @@
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
-            <a class="navbar-brand" href="homepage.html"><img src="images/logo.png" width="70px"></a>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="70px">Student Information System</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="homepage.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="Grade.html">Grades</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Schedule.html">Class Schedule</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="enrollment.html">Enrollment</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav mx-5">
@@ -35,7 +38,7 @@
                         </a>
                         <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                            <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                            <li><a class="dropdown-item" href="login.html">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -45,38 +48,325 @@
 <!-- nav end -->
 
     <main class="flex-grow-1">
-        <div class="container mt-5">
+        <div class="container mt-5 mb-5">
             <h2 class="mb-4">Your Grades</h2>
             <div class="table-responsive">
                 <table class="table table-striped">
                     <thead>
                         <tr>
+                            <th scope="col">Code</th>
                             <th scope="col">Course</th>
                             <th scope="col">Grade</th>
-                            <th scope="col">Semester</th>
+                            <th scope="col">Remarks</th>
+                            <th scope="col">Takes</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <th colspan="5">1st Year, First Semester</th>
+                        </tr>
+                        <tr>
+                            <td>CS101</td>
                             <td>Physical Education</td>
                             <td>90</td>
-                            <td>Midterms</td>
+                            <td>Passed</td>
+                            <td>1</td>
                         </tr>
                         <tr>
+                            <td>CS102</td>
                             <td>Information Assurance and Security</td>
                             <td>80</td>
-                            <td>Midterms</td>
+                            <td>Passed</td>
+                            <td>1</td>
                         </tr>
                         <tr>
+                            <td>CS103</td>
                             <td>Advance Database System</td>
                             <td>79</td>
-                            <td>Midterms</td>
+                            <td>Passed</td>
+                            <td>1</td>
                         </tr>
                         <tr>
+                            <td>SE102</td>
                             <td>Software Engineering 2</td>
                             <td>75</td>
-                            <td>Midterms</td>
+                            <td>Passed</td>
+                            <td>1</td>
                         </tr>
+                        <tr>
+                            <td>WEB102</td>
+                            <td>Web Development 2</td>
+                            <td>88</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">1st Year, Second Semester</th>
+                        </tr>
+                        <tr>
+                            <td>CS104</td>
+                            <td>Introduction to Programming</td>
+                            <td>85</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>CS105</td>
+                            <td>Data Structures and Algorithms</td>
+                            <td>82</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>CS106</td>
+                            <td>Computer Networks</td>
+                            <td>78</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>SE103</td>
+                            <td>Software Engineering Principles</td>
+                            <td>88</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>WEB103</td>
+                            <td>Web Technologies</td>
+                            <td>90</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">2nd Year, First Semester</th>
+                        </tr>
+                        <tr>
+                            <td>CS201</td>
+                            <td>Operating Systems</td>
+                            <td>87</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>CS202</td>
+                            <td>Database Management Systems</td>
+                            <td>84</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>CS203</td>
+                            <td>Artificial Intelligence</td>
+                            <td>79</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>SE201</td>
+                            <td>Software Design Patterns</td>
+                            <td>91</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>WEB201</td>
+                            <td>Advanced Web Development</td>
+                            <td>86</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">2nd Year, Second Semester</th>
+                        </tr>
+                        <tr>
+                            <td>CS204</td>
+                            <td>Machine Learning</td>
+                            <td>83</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>CS205</td>
+                            <td>Cybersecurity Fundamentals</td>
+                            <td>80</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>CS206</td>
+                            <td>Cloud Computing</td>
+                            <td>88</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>SE202</td>
+                            <td>Agile Software Development</td>
+                            <td>85</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>WEB202</td>
+                            <td>Mobile Web Development</td>
+                            <td>89</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">3rd Year, First Semester</th>
+                        </tr>
+                        <tr>
+                            <td>CS301</td>
+                            <td>Distributed Systems</td>
+                            <td>86</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>CS302</td>
+                            <td>Big Data Analytics</td>
+                            <td>82</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>CS303</td>
+                            <td>Computer Vision</td>
+                            <td>78</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>SE301</td>
+                            <td>Software Testing and Quality Assurance</td>
+                            <td>90</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>WEB301</td>
+                            <td>Full-Stack Web Development</td>
+                            <td>87</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">3rd Year, Second Semester</th>
+                        </tr>
+                        <tr>
+                            <td>CS304</td>
+                            <td>Blockchain Technology</td>
+                            <td>84</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>CS305</td>
+                            <td>Internet of Things</td>
+                            <td>81</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>CS306</td>
+                            <td>Quantum Computing</td>
+                            <td>76</td>
+                            <td>Passed</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>SE302</td>
+                            <td>DevOps and CI/CD</td>
+                            <td>89</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>WEB302</td>
+                            <td>Progressive Web Apps</td>
+                            <td>92</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">4th Year, First Semester</th>
+                        </tr>
+                        <tr>
+                            <td>CS401</td>
+                            <td>Advanced Algorithms</td>
+                            <td>88</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>CS402</td>
+                            <td>Research Methods in Computing</td>
+                            <td>85</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>CS403</td>
+                            <td>Ethics in Technology</td>
+                            <td>90</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>SE401</td>
+                            <td>Software Project Management</td>
+                            <td>87</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>WEB401</td>
+                            <td>Web Security</td>
+                            <td>83</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">4th Year, Second Semester</th>
+                        </tr>
+                        <tr>
+                            <td>CS404</td>
+                            <td>Capstone Project</td>
+                            <td>95</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>CS405</td>
+                            <td>Internship/Practicum</td>
+                            <td>92</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>CS406</td>
+                            <td>Emerging Technologies Seminar</td>
+                            <td>89</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>SE402</td>
+                            <td>Advanced Software Engineering</td>
+                            <td>86</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>WEB402</td>
+                            <td>E-Commerce Platforms</td>
+                            <td>88</td>
+                            <td>Passed</td>
+                            <td>1</td>
+                        </tr>
+                        
                     </tbody>
                 </table>
             </div>

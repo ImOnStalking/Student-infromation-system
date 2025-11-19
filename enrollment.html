@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment</title>
+    <link href="bootstrap-offline-docs-5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="70px">Student Information System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Grade.html">Grades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Schedule.html">Class Schedule</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" href="enrollment.html">Enrollment</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" href="#">Student Fees</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mx-5">
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <img src="images/profile.jpg" alt="" id="profileimg">
+                        </a>
+                        <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+<!-- nav end -->
+
+    <main class="flex-grow-1">
+        <div class="container mt-5 mb-5">
+            <h2 class="mb-4">College Enrollment Form</h2>
+            <form>
+                <!-- Personal Information -->
+                <h4>Personal Information</h4>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="fullname" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullname" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="birthday" class="form-label">Date of Birth</label>
+                        <input type="date" class="form-control" id="birthday" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="gender" class="form-label">Gender</label>
+                        <select class="form-select" id="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="studentid" class="form-label">Student ID Number</label>
+                        <input type="text" class="form-control" id="studentid" required>
+                    </div>
+                </div>
+
+                <!-- Educational Background -->
+                <h4>Educational Background</h4>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="elementary" class="form-label">Elementary School</label>
+                        <input type="text" class="form-control" id="elementary" placeholder="School Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="highschool" class="form-label">High School</label>
+                        <input type="text" class="form-control" id="highschool" placeholder="School Name" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="seniorhigh" class="form-label">Senior High School</label>
+                        <input type="text" class="form-control" id="seniorhigh" placeholder="School Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="previouscollege" class="form-label">Previous College (if any)</label>
+                        <input type="text" class="form-control" id="previouscollege" placeholder="College Name">
+                    </div>
+                </div>
+
+                <!-- Address -->
+                <h4>Address</h4>
+                <div class="mb-3">
+                    <label for="currentaddress" class="form-label">Current Address</label>
+                    <textarea class="form-control" id="currentaddress" rows="3" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="permanentaddress" class="form-label">Permanent Address</label>
+                    <textarea class="form-control" id="permanentaddress" rows="3" required></textarea>
+                </div>
+
+                <!-- Emergency Contacts -->
+                <h4>Emergency Contacts</h4>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="emergencyname" class="form-label">Emergency Contact Name</label>
+                        <input type="text" class="form-control" id="emergencyname" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="relationship" class="form-label">Relationship</label>
+                        <input type="text" class="form-control" id="relationship" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="emergencyphone" class="form-label">Emergency Contact Phone</label>
+                        <input type="tel" class="form-control" id="emergencyphone" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="emergencyemail" class="form-label">Emergency Contact Email</label>
+                        <input type="email" class="form-control" id="emergencyemail" required>
+                    </div>
+                </div>
+
+                <!-- Degree Selection -->
+                <h4>Degree Selection</h4>
+                <p>Select the degree program you wish to enroll in:</p>
+                <div class="mb-3">
+                    <select class="form-select" id="courses" name="courses" required>
+                        <option value="">Select a Degree Program</option>
+                        <option value="Bachelor in Science of Information Technology">Bachelor in Science of Information Technology</option>
+                        <option value="Bachelor in Computer Science">Bachelor in Computer Science</option>
+                        <option value="Bachelor in Business Administration">Bachelor in Business Administration</option>
+                        <option value="Bachelor in Engineering">Bachelor in Engineering</option>
+                        <option value="Bachelor in Arts">Bachelor in Arts</option>
+                        <option value="Bachelor in Nursing">Bachelor in Nursing</option>
+                        <option value="Bachelor in Education">Bachelor in Education</option>
+                        <option value="Bachelor in Psychology">Bachelor in Psychology</option>
+                        <option value="Bachelor in Finance">Bachelor in Finance</option>
+                        <option value="Bachelor in Marketing">Bachelor in Marketing</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit Enrollment</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Student Information System</h5>
+                    <p>© 2023 All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Contact: support@sis.edu</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

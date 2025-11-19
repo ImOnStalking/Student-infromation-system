@@ -12,14 +12,14 @@
     <!-- nav -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
-            <a class="navbar-brand" href="homepage.html"><img src="images/logo.png" width="70px"></a>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="70px">Student Infromation System</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="homepage.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Grade.html">Grades</a>
@@ -27,15 +27,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Schedule.html">Class Schedule</a>
                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="enrollment.html">Enrollment</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav mx-5">
                     <li class="nav-item dropdown mx-3">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="event.stopPropagation()">
                            <img src="images/profile.jpg" alt="" id="profileimg">
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                            <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                            <li><a class="dropdown-item" href="login.html">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -46,7 +49,7 @@
 
 
     <main class="flex-grow-1">
-        <div class="container mt-5">
+        <div class="container mt-5 mb-5">
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
@@ -54,6 +57,7 @@
                             <img src="images/profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
                             <h5 class="card-title">Student Name</h5>
                             <p class="card-text">Student ID: 23-00001</p>
+                            <p class="card-text">Status: <span class="text-success">Enrolled</span></p>
                         </div>
                     </div>
                 </div>
@@ -63,16 +67,50 @@
                             <h4>Profile Information</h4>
                         </div>
                         <div class="card-body">
-                            <div class="row">
+                            <h5>Personal Information</h5>
+                            <div class="row mb-3">
                                 <div class="col-sm-6">
                                     <p><strong>Full Name:</strong> Student Name</p>
                                     <p><strong>Student ID:</strong> 23-00001</p>
-                                    <p><strong>Email:</strong> Studentemail@example.com</p>
+                                    <p><strong>Date of Birth:</strong> January 1, 2000</p>
+                                    <p><strong>Gender:</strong> Male</p>
                                 </div>
                                 <div class="col-sm-6">
+                                    <p><strong>Email:</strong> Studentemail@example.com</p>
                                     <p><strong>Phone:</strong> +630902025050</p>
-                                    <p><strong>Address:</strong> 123 bontoc, mt.province</p>
                                     <p><strong>Enrollment Date:</strong> September 2023</p>
+                                </div>
+                            </div>
+                            <h5>Address Information</h5>
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <p><strong>Current Address:</strong> 123 bontoc, mt.province</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p><strong>Permanent Address:</strong> 123 bontoc, mt.province</p>
+                                </div>
+                            </div>
+                            <h5>Educational Background</h5>
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <p><strong>Elementary School:</strong> Sample Elementary School</p>
+                                    <p><strong>High School:</strong> Sample High School</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p><strong>Senior High School:</strong> Sample Senior High School</p>
+                                    <p><strong>Previous College:</strong> None</p>
+                                    <p><strong>Degree Program:</strong> Bachelor in Science of Information Technology</p>
+                                </div>
+                            </div>
+                            <h5>Emergency Contacts</h5>
+                            <div class="row mb-3">
+                                <div class="col-sm-6">
+                                    <p><strong>Emergency Contact Name:</strong> John Doe</p>
+                                    <p><strong>Relationship:</strong> Father</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p><strong>Emergency Contact Phone:</strong> +630902025051</p>
+                                    <p><strong>Emergency Contact Email:</strong> john.doe@example.com</p>
                                 </div>
                             </div>
                             <a href="#" class="btn btn-custom">Edit Profile</a>
